@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Letter Slider</title>
+		<link rel="stylesheet" type="text/css" href="./style.css">
+	</head>
+	<body>
+		<div id="main">
+			<div id="slider">
+				<div id="y">
+				        Y	
+				</div>
+				<div class="line"></div>
+				<div id="data"><!/div>
+					CASE 1<br>
+					
+					<hr size="2" width="50px" color="#111" align="left"/>
+					<div class="title">COOL<br>DESIGN</div>
+					<div class="info">Lorem Ipsum is simply dummy text of the printing and
+                                        typesetting industry. Loren Ipsum has been the industry's standard dummy text
+                                        ever since the 1500s, When an unkown printer took a gallery of type and
+                                        scrambled it to make a type specimen book.
+                                        </div>
+					</div>
+
+			        <div id="o">
+                                        O
+				</div>
+                                <div class="line"></div>
+				<div id="data2"><!/div>
+                                        CASE 2<br>
+                                
+                                <hr size="2" width="50px" color="#111" align="left"/>
+                                <div class="title">COOL<br>DESIGN</div>
+                                <div class="info">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry. Loren Ipsum has been the industry's standard dummy text
+                                ever since the 1500s, When an unkown printer took a gallery of type and
+                                scrambled it to make a type specimen book.
+                                </div>
+				</div>
+
+				<div id="g">
+                                        G
+                                </div>
+                                <div class="line"></div>
+				<div id="data3"><!/div>
+                                        CASE 3<br>
+                               
+                                <hr size="2" width="50px" color="#111" align="left"/>
+                                <div class="title">COOL<br>DESIGN</div>
+                                <div class="info">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry. Loren Ipsum has been the industry's standard dummy text
+                                ever since the 1500s, When an unkown printer took a gallery of type and
+                                scrambled it to make a type specimen book.
+                                </div>
+				</div>
+
+				<div id="i">
+                                        I
+                                </div>
+                                <div class="line"></div>
+				<div id="data4"><!/div>
+                                        CASE 4<br>
+                                
+                                <hr size="2" width="50px" color="#111" align="left"/>
+                                <div class="title">COOL<br>DESIGN</div>
+                                <div class="info">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry. Loren Ipsum has been the industry's standard dummy text
+                                ever since the 1500s, When an unkown printer took a gallery of type and
+                                scrambled it to make a type specimen book.
+                                
+				</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div id="navigation">
+			<a href="#" id="circle1"></a>
+			<a href="#" id="circle2"></a>
+			<a href="#" id="circle3"></a>
+			<a href="#" id="circle4"></a>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="./script.js"></script>
+
+	</body>
+
+	<script type="text/javascript">
+		var l1=$("#y");
+
+                var layer=$("#main");
+
+                layer.mousemove(function(e){
+			var valueX=(e.pageX * -1 / 40);
+
+			l1.css({'background-position':(valueX-200)+''+0});
+			l2.css({'background-position':(valueX)+''+0});
+			l3.css({'background-position':(valueX-200)+''+0});
+			l4.css({'background-position':(valueX+600)+''+0});
+		});
+	</script>
+</html>
